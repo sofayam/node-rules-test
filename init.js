@@ -45,7 +45,7 @@ var fact = {
 var R = new RuleEngine(rules);
  
 //Now pass the fact on to the rule engine for results 
-R.execute(fact,function(result){ 
+R.execute(fact, function(result){ 
  
     if(result.result) 
         console.log("Payment Accepted"); 
@@ -53,3 +53,5 @@ R.execute(fact,function(result){
         console.log("Payment Rejected");
     
 });
+var str = R.toJSON()
+console.log(str)
